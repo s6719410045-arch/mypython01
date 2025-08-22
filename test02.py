@@ -4,5 +4,4 @@ print("hello")
 print("hi")
 
 
-print("aaaa"):print("ocr");print("ccc")
-print("ord");print("CDR");print("CDDO")
+
