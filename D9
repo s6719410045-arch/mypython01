@@ -1,0 +1,23 @@
+<?php
+$qty = 3;        // จำนวนตั๋วรถไฟ (ใบ)
+$price = 100;    // ราคาตั๋วรถไฟ (บาท)
+$total = $qty * $price;  // คำนวณราคารวมก่อนส่วนลด
+$discount = 0;   // ส่วนลดเริ่มต้น
+
+switch (true) {
+    case ($qty > 10):
+        $discount = $total * 0.15;
+        break;
+    case ($qty > 5):
+        $discount = $total * 0.10;
+        break;
+    default:
+        $discount = 0;
+}
+
+$net = $total - $discount;
+
+echo "ตั๋วรถไฟ $qty ใบ เป็นเงิน $total บาท<br>";
+echo "ได้รับส่วนลด $discount บาท<br>";
+echo "ยอดเงินที่ต้องชำระ $net บาท<br>";
+?>
