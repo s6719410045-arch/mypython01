@@ -29,6 +29,6 @@ while True:
                 print('ถูกละเก้งมากไอ่หนูววว')
                 break
         elif number > 59 :
-                print('คุณทายเลชผิดมากไป')
+                print('คุณทายเลขผิดมากไป')
         elif number < 59 :
                 print('คุณทายเลขผิดน้อยไป')
